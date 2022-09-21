@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sirin Stencil', cursive;
+}
+.card__block{
+    flex-wrap: wrap;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/masjidr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px;
+}
+
+.line {
+    height: 1px !important;
+}
+.lines {
+    height: 1px !important;
+    display: none !important;
+}
+.option__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.selected {
+    cursor: pointer !important;
+    margin-right: 30px !important;
+    margin: 10px !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    color: #fff;
+    background-color: transparent;
+}
+
+option {
+    cursor: pointer !important;
+}
+
+.values {
+    margin-left: 10px;
+}
+.oclock__block{
+    font-size: 22px;
+}
+.hous{
+}
+.calendar__day i {
+    color: #fff;
+    font-size: 22px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.calendar__day{
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.199);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+}
+
+.card:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 8px 24px, rgba(255, 255, 255, 0.1) 0px 16px 56px, rgba(255, 255, 255, 0.1) 0px 24px 80px;
+    cursor: pointer;
+}
+
+.vaqt{
+    color:#fff;
+}
+.hide{
+    display: none !important;
+}
+.img-fluid{
+   
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+.img-fluid:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+@media only screen and (max-width:576px) {
+    .hide{
+        display: block !important;
+        background: #023926;
+    }
+    .rows{
+        background-color: #023926;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .wrapper {  
+        background-image: url("../images/body-bg20.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .card__block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        background-color:#008653;
+        box-shadow: rgba(0, 53, 5, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        transition: 0.4s linear;
+        -webkit-transition: 0.4s linear;
+        -moz-transition: 0.4s linear;
+        -ms-transition: 0.4s linear;
+        -o-transition: 0.4s linear;
+        margin: 10px;
+        width: 150px;
+        height: 250px;
+    }
+    .tanlash{
+        display: none;
+    }
+    .selected{
+        width: 120px !important;
+    }
+    .line {
+        height: 1px !important;
+        display: none !important;
+    }
+    .lines {
+        height: 1px !important;
+        display: block !important;
+    }
+    .vaqtlar{
+        display: none;
+    }
+    .option__block{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .location{
+        display: none !important;
+    }
+}

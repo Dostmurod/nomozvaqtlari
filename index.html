@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Lato&display=swap" rel="stylesheet">
+    <!-- link custom css -->
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Islom uz</title>
+</head>
+
+<body>
+
+    <header class=" d-flex hide p-2">
+       <div class="show d-flex">
+        <img class="img-fluid" src="./images/map.png" alt="map">
+        <h2 class="text-center text-light mx-auto d-block p-1">Namoz vaqtlari</h2>
+       </div>
+    </header>
+    <div class="wrapper">
+        <div class="container-fluid container">
+           <div class="rows">
+            <div class="row">
+                <h3 class="text-center text-light mt-4 vaqtlar">Namoz vaqtlari</h3>
+                <div class="col-10 mx-auto d-block bg-light line"> </div>
+                <div class="option__block col-7 d-flex mx-auto ">
+                    <h5 class="text-light text-center mt-3 tanlash">Hududni tanlang:</h5>
+                    <select class="selected form-control w-25 ml-4 ">
+                        <option disabled selected>Toshkent</option>
+                    </select>
+                <div class="col-12 mx-auto d-block bg-light lines"> </div>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="block__center d-flex justify-content-center">
+                    <div class="col-lg-5 col-md-4 col-sm-5 mx-auto d-flex text-light location">
+                        <h4>Mintaqa: </h4>
+                        <h4 class="values text-warning ml-2">Toshkent </h4>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 mx-auto d-flex calendar__day ">
+
+                    <div class="oclock__block">
+                        <span class="date"></span>
+                        <span class="year"></span>
+                        <span class="hous text-warning"></span> :
+                        <span class="minut text-warning"></span> :
+                        <span class="second text-warning"></span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+            <div class="row">
+                <div class="card__block d-flex justify-content-center align-items-center ">
+                    <div class="card col-lg-2 col-md-4 col-sm-6 p-2">
+                        <p class="text-warning text-center fs-3 "> Tong</p>
+                        <img class="img-fluid" src="./images/tong.svg" alt="Tong img">
+                        <p class="text-center fs-3 vaqt ">04:58</p>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-sm-6 p-2">
+                        <p class="text-warning text-center fs-3"> Quyosh</p>
+                        <img class="img-fluid" src="./images/sunrise.svg" alt="Tong img">
+                        <p class="text-center fs-3 vaqt">04:58</p>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-sm-6 p-2">
+                        <p class="text-warning text-center fs-3"> Peshin</p>
+                        <img class="img-fluid" src="./images/sun.svg" alt="Tong img">
+                        <p class="text-center fs-3 vaqt ">04:58</p>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-sm-6 p-2">
+                        <p class="text-warning text-center fs-3"> Asr</p>
+                        <img class="img-fluid" src="./images/sunsasr.svg" alt="Tong img">
+                        <p class="text-center fs-3 vaqt "></p>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-sm-6 p-2">
+                        <p class="text-warning text-center fs-3"> Shom</p>
+                        <img class="img-fluid" src="./images/shom.svg" alt="Tong img">
+                        <p class="text-center fs-3 vaqt ">04:58</p>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-sm-6 p-2">
+                        <p class="text-warning text-center fs-3"> Xufton</p>
+                        <img class="img-fluid" src="./images/moon.svg" alt="Tong img">
+                        <p class="text-center fs-3 vaqt ">04:58</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./region.js"></script>
+    <script src="./plugin.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
